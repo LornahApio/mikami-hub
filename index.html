@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mikami Solutions Wholesale Quick-Order & Dispatch Hub — fast, mobile-optimized B2B order management." />
+  <title>Mikami Hub — Wholesale Operations</title>
+  <link rel="manifest" href="/public/manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Navigation tabs -->
+    <nav class="tab-nav" id="main-nav">
+      <button class="tab-btn active" data-tab="catalog" id="nav-catalog">🛒 Catalog</button>
+      <button class="tab-btn" data-tab="dispatch" id="nav-dispatch">📦 Dispatch</button>
+      <button class="tab-btn" data-tab="inventory" id="nav-inventory">🗄️ Inventory</button>
+      <button class="tab-btn" data-tab="ledger" id="nav-ledger">📒 Ledger</button>
+    </nav>
+
+    <!-- Module containers -->
+    <main class="module-container">
+      <div class="module active" id="tab-catalog"></div>
+      <div class="module" id="tab-dispatch"></div>
+      <div class="module" id="tab-inventory"></div>
+      <div class="module" id="tab-ledger"></div>
+    </main>
+
+    <!-- Cart drawer -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer"></aside>
+
+    <!-- Global modal -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal-box" id="modal-box"></div>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
